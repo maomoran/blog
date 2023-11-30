@@ -6,17 +6,31 @@
     <title>maomoran</title>
     <style>
       body {
-        background-color: azure blue;
         margin: 0;
-        font-family: Arial, sans-serif;
+        padding-top: 50px;
       }
 
+      h1,
+      h2,
+      h3 {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+
+      p,
+      caption {
+        text-align: center;
+      }
+
+
       nav {
-        background-color: chocolate;
+        background-color: black;
+        font-family: Arial, sans-serif;
         overflow: hidden;
         position: fixed;
         top: 0;
         width: 100%;
+        z-index: 1000;
       }
 
       nav a {
@@ -25,15 +39,26 @@
         color: white;
         text-align: center;
         padding: 14px 16px;
-      }
-
-      section {
-        margin-top: 50px;
-        padding: 20px;
+        text-decoration: none;
       }
 
       nav a:hover {
-        background-color: black;
+        background-color: white;
+        color: black;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding-top: 70px;
+      }
+
+      .gallery img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        cursor: pointer;
       }
     </style>
   </head>
@@ -44,8 +69,9 @@
       <a href="#writings">Writings</a>
       <a href="#gallery">Gallery</a>
     </nav>
-    <h1>Poems</h1>
+    <h1>My Poems</h1>
     <h2>Fell for Fall</h2>
+    <caption>November 1, 2023</caption>
     <p>
       I'm falling hard this fall,<br>
       But at least the view is pretty.<br>
@@ -86,6 +112,32 @@
       But soon they'll all be bare,<br>
       And I'm scared I'll have to miss,<br>
       Saying goodbye to those I care.
+    </p>
+
+    <div class="gallery">
+      <a href="IMG_6927.HEIC">
+        <img src="IMG_6927.HEIC" alt="Gallery Item">
+      </a>
+      <a href="IMG_6929.HEIC">
+        <img src="IMG_6929.HEIC" alt="Gallery Item">
+      </a>
+      <a href="IMG_6857.HEIC">
+        <img src="IMG_6857.HEIC" alt="Gallery Item">
+      </a>
+      <a href="IMG_6859.HEIC">
+        <img src="IMG_6859.HEIC" alt="Gallery Item">
+      </a>
+      <a href="IMG_6927.HEIC">
+        <img src="IMG_6927.HEIC" alt="Gallery Item">
+      </a>
+      <a href="IMG_6927.HEIC">
+        <img src="IMG_6927.HEIC" alt="Gallery Item">
+      </a>
+    </div>
+    <hr>
+    <h2>Contact</h2>
+    <p>
+      Send me an email at <a href="mailto:maomoran@uwaterloo.ca">maomoran@uwaterloo.ca</a>
     </p>
   </body>
 </html>
