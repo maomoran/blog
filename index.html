@@ -12,12 +12,39 @@
       }
 
       nav {
-        background-color:
+        background-color: chocolate;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      nav a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+      }
+
+      section {
+        margin-top: 50px;
+        padding: 20px;
+      }
+
+      nav a:hover {
+        background-color: black;
       }
     </style>
   </head>
   <body>
-    <h1></h1>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#contact">Contact</a>
+      <a href="#writings">Writings</a>
+      <a href="#gallery">Gallery</a>
+    </nav>
+    <h1>Poems</h1>
     <h2>Fell for Fall</h2>
     <p>
       I'm falling hard this fall,<br>
@@ -60,6 +87,5 @@
       And I'm scared I'll have to miss,<br>
       Saying goodbye to those I care.
     </p>
-
   </body>
 </html>
